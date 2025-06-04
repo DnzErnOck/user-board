@@ -8,7 +8,17 @@ const router = createRouter({
       name: 'home',
       component: () => import('../views/Home.vue')
     },
-    
+    {
+      path: '/users',
+      name: 'users',
+      component: () => import('../views/Users.vue')
+    },
+    {
+        path: '/user/:id',
+        name: 'UserEdit',
+        component: () => import('../views/UserEdit.vue')
+      }
+      
   ]
 })
 
